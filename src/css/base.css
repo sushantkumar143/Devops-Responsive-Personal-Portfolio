@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #00ff88;
+    --primary-color: #55f1a8;
     --bg-dark: #0f172a;
     --text-light: #f8fafc;
-    --card-bg: #1e293b;
+    --card-bg: #212e43;
     --transition: all 0.3s ease;
 }
 
@@ -22,3 +22,8 @@ body {
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
+
+header {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
