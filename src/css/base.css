@@ -27,3 +27,8 @@ header {
   background-color: #0f172a;
   color: #e5e7eb;
 }
+
+footer {
+    background-color: antiquewhite;
+    font-weight: 600;
+}
