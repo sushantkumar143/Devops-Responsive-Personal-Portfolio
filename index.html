@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,5 +47,678 @@
     <script src="src/js/animations.js"></script>
     <script src="src/js/darkmode.js"></script>
     <script src="src/js/form-validation.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Kumar - Portfolio</title>
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="hexagon-loader">
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+            </div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">SK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Sushant Kumar</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Computer Science & Engineering student passionate about AI, Machine Learning, and Full-Stack Development. Building innovative solutions that make a difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="public/resume.pdf" download class="btn btn-secondary">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sushantkumar143" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sushant-kumar-97978b28b" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sushant14300@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Dev</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-trophy"></i>
+                        <span>Top 5%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>B.Tech in CSE</p>
+                        <span>CGPA: 9.14</span>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Experience</h3>
+                        <p>500+ Problems</p>
+                        <span>Solved</span>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Projects</h3>
+                        <p>Multiple AI/ML</p>
+                        <span>Solutions</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate Computer Science student at <strong>Lovely Professional University</strong> with a strong foundation in AI, Machine Learning, and Full-Stack Development. My journey in technology is driven by curiosity and a desire to create innovative solutions.
+                    </p>
+                    <p class="about-description">
+                        With experience in building AI-powered systems, automation platforms, and disease prediction models, I combine technical expertise with creative problem-solving. I've secured top rankings in competitive programming and received university honors for academic excellence.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="9.14">0</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1583">0</div>
+                            <div class="stat-label">LeetCode Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="90">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="90">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <span class="skill-name">Streamlit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>ML/AI Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="85">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <span class="skill-name">Numpy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="90">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & Internships</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2025 - Oct 2025</div>
+                        <h3>Virtual Internship</h3>
+                        <h4>AICTE – Edunet Foundation | IBM SkillsBuild</h4>
+                        <p>Worked on AI & Cloud integration using Streamlit Cloud. Built ML Models, APIs and explored LLM-based automations. Gained hands-on experience in building and deploying ML models.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>LLMs</span>
+                            <span>Data Visualization</span>
+                            <span>ML Models</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025 - July 2025</div>
+                        <h3>Summer Training</h3>
+                        <h4>Competitive Programming | Lovely Professional University</h4>
+                        <p>Solved 500+ problems across LeetCode & Codeforces, improving global ranking by 65%. Achieved 90% problem-solving accuracy and optimized solutions, reducing runtime by 30-40%.</p>
+                        <div class="tech-tags">
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>DSA</span>
+                            <span>STL</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container-full">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-scroll-container">
+                <div class="projects-horizontal">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Multi-Disease Prediction System</h3>
+                                <span class="project-date">April 2025 - May 2025</span>
+                            </div>
+                            <p>Built an AI-powered system using machine learning algorithms to detect diseases like Diabetes, Heart Disease, and Parkinson's. Developed an interactive web interface using Streamlit for real-time health predictions.</p>
+                            <div class="project-tech">
+                                <span>Streamlit</span>
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>ML</span>
+                                <span>Data Viz</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>AI Multi-Platform Automation</h3>
+                                <span class="project-date">Feb 2025 - July 2025</span>
+                            </div>
+                            <p>Developed an AI-integrated system for managing tasks, emails, and calendars. Integrated Gmail, Google Calendar and WhatsApp APIs. Built a desktop assistant with voice interaction, face authentication, and sentiment analysis.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>API</span>
+                                <span>NLP</span>
+                                <span>Face Recognition</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Interactive Portfolio</h3>
+                                <span class="project-date">Dec 2025</span>
+                            </div>
+                            <p>A modern, fully responsive portfolio website with smooth animations, dark mode support, and interactive UI elements. Features horizontal scrolling project showcase and engaging user experience.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>GSAP</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <i class="fas fa-arrow-right"></i>
+                <span>Scroll to explore projects</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Milestones</span>
+                <h2 class="section-title">Achievements & Recognition</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Global Rank 7186</h3>
+                        <p>Attained a global rating of 1583 and Rank 7186 in LeetCode Biweekly Contest (Top 5%)</p>
+                        <span class="achievement-date">June 2024</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>University Honor Roll</h3>
+                        <p>Placed on the Honor Roll by Lovely Professional University for excellent academic performance (Top 0.1% - Dean's List)</p>
+                        <span class="achievement-date">May 2024</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Hackathon Finalist</h3>
+                        <p>Reached final round of CIPHERTHON 2.0 national-level hackathon demonstrating strong innovation and problem-solving skills</p>
+                        <span class="achievement-date">February 2024</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Championship Trophy</h3>
+                        <p>Honored with Championship Trophy for securing highest number of awards and displaying exemplary discipline</p>
+                        <span class="achievement-date">February 2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3 class="cert-title">Certifications</h3>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>Microsoft Applied Skills: Get started with OOPs in C#</h4>
+                            <span>Microsoft | Aug 2025 - Sep 2025</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>Oracle Cloud Foundation Associate</h4>
+                            <span>Oracle | July 2025 - Sep 2025</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>Data Structure and Algorithm</h4>
+                            <span>Programming Pathshala | June 2025 - July 2025</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info">
+                            <h4>Bits and Bytes of Computer Network</h4>
+                            <span>Google / Coursera | Aug 2024 - Sep 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sushant14300@gmail.com">sushant14300@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+916207851006">+91-6207851006</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Phagwara, Punjab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/sushantkumar143" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sushant-kumar-97978b28b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:sushant14300@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">SK</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>&copy; 2025 Sushant Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/animations.js"></script>
+    <script src="src/js/darkmode.js"></script>
+    <script src="src/js/form-validation.js"></script>
+    <script>
+        (function() {
+            const loader = document.getElementById('loader');
+            if (!loader) return;
+
+            // Hide loader when the entire page has loaded
+            window.addEventListener('load', () => loader.classList.add('hidden'));
+
+            // Fallback: ensure loader is hidden after 5s even if load event doesn't fire
+            setTimeout(() => loader.classList.add('hidden'), 5000);
+        })();
+    </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 4rem 2rem;
@@ -26,4 +26,114 @@
     background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
 }
 
-.hero h1 { font-size: 4rem; margin-bottom: 1rem; }
+.hero h1 { font-size: 4rem; margin-bottom: 1rem; } */
+
+/* Hero Section UI Improvement */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 100px; /* Space for fixed navbar */
+}
+
+.hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.gradient-orb {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.orb-1 { width: 400px; height: 400px; background: var(--primary); top: -100px; left: -100px; }
+.orb-2 { width: 300px; height: 300px; background: var(--secondary); bottom: -50px; right: -50px; }
+
+/* About Me Card Improvements */
+.info-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+/* Specific Height for Project Scroll Section */
+.projects-section {
+    overflow: hidden; /* Necessary for GSAP horizontal scroll */
+}
+
+.projects-horizontal {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+/* src/css/layout.css */
+
+.projects-section {
+    width: 100%;
+    min-height: 100vh; /* Ensures full screen coverage while pinned */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers cards vertically in the pinned section */
+    overflow: hidden;
+    padding-bottom: 5rem; /* Space below the projects to prevent cutting off */
+}
+
+.projects-horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 5%; /* Initial padding so first card isn't stuck to the edge */
+    gap: 2rem;
+    will-change: transform;
+}
+
+.project-card {
+    flex-shrink: 0; /* Prevents cards from squishing */
+    width: 600px;   /* Fixed width for consistent horizontal feel */
+    height: auto;
+    margin-bottom: 2rem; /* Extra breathing room at the bottom of the card */
+}
+
+/* Fix for Hero and About overlap */
+.hero-section {
+    padding-bottom: 100px; /* Space before About section starts */
+}
+
+.about-section {
+    padding: 100px 0;
+    margin-top: 50px;
+}
+
+
+
+/* Ensure Navbar stays on top and content starts below it */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px; /* Fixed height */
+    padding: 0 5%;
+    background: var(--bg-primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+body {
+    padding-top: 80px; /* Offset for the fixed navbar */
+}
