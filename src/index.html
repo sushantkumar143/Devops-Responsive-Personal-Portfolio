@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Portfolio | Systems & Automation</title>
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/theme.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span>_DEVOPS</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Pipeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Automating the Future.</h1>
+            <p>I build robust CI/CD pipelines, manage scalable cloud infrastructure, and bridge the gap between Dev and Ops.</p>
+            <div class="hero-btns">
+                <a href="public/resume.pdf" class="btn primary" target="_blank">Download CV</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Deploy Message</button>
+            <p id="form-status"></p>
+        </form>
+    </section>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/animations.js"></script>
+    <script src="src/js/darkmode.js"></script>
+    <script src="src/js/form-validation.js"></script>
+</body>
+</html>
