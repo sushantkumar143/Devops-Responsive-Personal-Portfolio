@@ -28,6 +28,12 @@ Portfolio_Project/
 
 ### Repository Setup
 - Initialized Git repository using `git init`
+ ```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
+
 - Created base project structure
 - Performed initial commit (`chore: setup initial project structure`)
 - Created and switched to `develop` branch
