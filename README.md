@@ -5,6 +5,8 @@ This project demonstrates a complete professional Git workflow followed during t
 It covers the entire lifecycle from repository initialization to a major UI redesign release (v2.0.0).  
 The repository is created for academic evaluation and showcases real-world Git practices such as branching, merging, rebasing, conflict resolution, tagging, and release management.
 
+![Devops Team Collaboration](images/Project-Collaborating-Team.png)
+
 ---
 
 ## Technologies Used
