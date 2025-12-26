@@ -12,17 +12,64 @@ The repository is created for academic evaluation and showcases real-world Git p
 ## Technologies Used
 HTML • CSS • JavaScript • Git (Git Bash) • GitHub
 
+![Devops Life Cycle](images/img1.png)
+
 ---
 
 ## Project Structure
-Portfolio_Project/
-│── index.html
-│── assets/
-│── css/
-│── js/
-│── images/
-│── README.md
 
+```text
+Portfolio_Project/
+├── index.html
+├── assets/
+├── css/
+├── js/
+├── images/
+├── Docs/
+└── README.md
+```
+---
+
+## System Architecture
+
+The Portfolio Web Application follows a **client-side, modular architecture** designed to ensure simplicity, scalability, and maintainability. The system is built using standard web technologies and integrates Git and GitHub for effective version control and development management.
+
+### Architecture Overview
+The application runs entirely on the **client side**, where users interact with the portfolio through a web browser. The browser loads HTML files, applies CSS for styling, and executes JavaScript for dynamic behavior. All static resources such as images and assets are organized in dedicated directories to maintain a clean and structured codebase.
+
+![System Architecture & Workflow](images/Project_Workflow.png)
+
+### Component Breakdown
+
+- **Presentation Layer (HTML)**  
+  Defines the structure and layout of the portfolio pages, including sections such as profile, skills, projects, and contact information.
+
+- **Styling Layer (CSS)**  
+  Manages the visual appearance of the application, including layouts, responsiveness, animations, and overall theme consistency.
+
+- **Behavior Layer (JavaScript)**  
+  Handles interactivity and dynamic functionality such as navigation effects, animations, user interactions, and form handling.
+
+- **Assets & Media Layer**  
+  Stores static resources such as images, icons, and other media files used throughout the application.
+
+- **Version Control Layer (Git & GitHub)**  
+  Tracks code changes, manages branches, handles merges, resolves conflicts, and maintains versioned releases using a professional Git workflow.
+
+### Workflow Architecture
+1. The user accesses the portfolio application through a web browser.
+2. HTML files are loaded and rendered by the browser.
+3. CSS styles are applied to ensure proper layout and responsiveness.
+4. JavaScript enhances the UI with dynamic and interactive features.
+5. Static assets are fetched from organized asset directories.
+6. Source code changes are managed, versioned, and released using Git and GitHub.
+
+### Architectural Characteristics
+- Modular and well-organized project structure  
+- Client-side rendering for fast performance  
+- Clear separation of concerns (HTML, CSS, JavaScript)  
+- Scalable design for future enhancements  
+- Professional Git-based development and version control workflow  
 
 ---
 
@@ -51,6 +98,8 @@ git commit -m "chore: setup initial project structure"
 git checkout -b develop
 ```
 
+![Initializing Git](images/Screenshots/1.png)
+
 ### Feature Development
 - Created feature branches:
 ```bash
@@ -72,6 +121,7 @@ git commit -m "feat: implement base layout"
 git commit -m "feat: add responsive UI"
 git commit -m "feat: implement dark mode"
 ```
+![Feature Development](images/Screenshots/2.png)
 
 ### Testing & Bug Fixes
 - Created UI testing branch `test/ui-testing`
@@ -89,6 +139,7 @@ git commit -m "feat: implement dark mode"
   git add .
   git commit -m "fix: correct header styling"
   ```
+  ![Testing & Bug Fixes](images/Screenshots/3.png)
 
 ### Merge, Rebase & Advanced Workflow
 - Merged bugfix branches with manual conflict resolution
@@ -110,7 +161,7 @@ git commit -m "feat: implement dark mode"
    ```bash
    git log --oneline --graph --all --decorate
    ```
-
+![Merge, Rebase & Advanced Workflow](images/Screenshots/4.png)
 
 ### Version v1.0.0 Release
 - Refactored project structure
@@ -119,10 +170,14 @@ git commit -m "feat: implement dark mode"
 - Created release tag `v1.0.0`
 - Created patch release tag `v1.0.1`
 
+  ![Version v1.0.0 Release](images/Screenshots/5.png)
+
 ### Remote Repository Management
 - Added remote origin
 - Pushed all branches to GitHub
 - Pushed all tags to GitHub
+
+   ![Version v1.0.0 Release](images/Screenshots/6.png)
 
 ### Major Update – v2.0.0
 - Created release branch `release/v2.0`
@@ -132,9 +187,13 @@ git commit -m "feat: implement dark mode"
 - Created final release tag `v2.0.0`
 - Pushed final release to GitHub
 
+   ![Version v1.0.0 Release](images/Screenshots/7.png)
+
 ### Cleanup & Verification
 - Deleted unused branches
 - Verified final version and release tags
+
+   ![Version v1.0.0 Release](images/Screenshots/8.png)
 
 ---
 
@@ -148,6 +207,7 @@ Each branch contains at least one meaningful commit.
 Merge conflicts were intentionally created during branch merges, resolved manually by editing conflicted files, removing conflict markers, and committing the final merged version successfully.
 
 ---
+ ![Version v1.0.0 Release](images/Screenshots/9.png)
 
 ## Git Commit Graph
 The commit graph clearly demonstrates:
@@ -180,6 +240,7 @@ Screenshots included in the repository demonstrate:
 ---
 
 ## Learning Outcomes
+ ![DEVOPS](images/DevOps-icon.png)
 - Practical implementation of advanced Git workflows
 - Branching, merging, and release strategies
 - Merge conflict handling
