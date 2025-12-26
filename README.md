@@ -1,68 +1,142 @@
-# 🚀 DevOps Portfolio Website – Git & GitHub Workflow Project
+# Portfolio Project – Git Execution Flow (v1.0.0 → v2.0.0)
 
-## 📌 Introduction
-
-This project demonstrates a real-world DevOps and GitHub workflow by developing and managing a portfolio website using professional version control practices. The project simulates an industry-level collaborative software environment using Git and GitHub, covering feature development, testing, bug fixing, advanced merging strategies, release management, and semantic versioning.
-
-The focus of this project is not only UI development but also proper source code lifecycle management using structured branching and clean commit history.
+## Project Overview
+This project demonstrates a complete professional Git workflow followed during the development of a Portfolio Web Application.  
+It covers the entire lifecycle from repository initialization to a major UI redesign release (v2.0.0).  
+The repository is created for academic evaluation and showcases real-world Git practices such as branching, merging, rebasing, conflict resolution, tagging, and release management.
 
 ---
 
-## 🛠️ Commands Used
+## Technologies Used
+HTML • CSS • JavaScript • Git (Git Bash) • GitHub
 
-### Repository Initialization
+---
 
-git init
-git status
-git add .
-git commit -m "chore: setup initial project structure"
+## Project Structure
+Portfolio_Project/
+│── index.html
+│── assets/
+│── css/
+│── js/
+│── images/
+│── README.md
 
-Branch Creation & Management
-git checkout -b develop
-git checkout -b feature/base-layout
-git checkout -b feature/responsive-ui
-git checkout -b feature/dark-mode
-git checkout -b feature/contact-form
-git checkout -b feature/animations
-git checkout -b bugfix/header-style
-git checkout -b bugfix/footer-text
-git checkout -b test/ui-testing
-git checkout -b release/v2.0
-git checkout -b main
 
-Feature, Bugfix & Testing Commits
-git commit -m "feat(ui): add base layout"
-git commit -m "feat(style): implement responsive layout"
-git commit -m "feat(theme): add dark mode"
-git commit -m "feat(form): add client-side form validation"
-git commit -m "feat(animation): add scroll animations"
-git commit -m "fix(header): improve color contrast"
-git commit -m "fix(footer): correct footer alignment"
-git commit -m "test(ui): fix layout and spacing issues"
+---
 
-Merging & Rebasing
-git merge feature/contact-form
-git rebase develop
+## Git Execution Flow
 
-Octopus Merge (Advanced Git Concept)
-git merge feature/animations feature/dark-mode feature/contact-form
+### Repository Setup
+- Initialized Git repository using `git init`
+- Created base project structure
+- Performed initial commit (`chore: setup initial project structure`)
+- Created and switched to `develop` branch
 
-Project Structure Refactor
-git mv src/index.html index.html
-git commit -m "chore(structure): move index.html to project root"
+### Feature Development
+- Created feature branches:
+  - `feature/base-layout`
+  - `feature/responsive-ui`
+  - `feature/dark-mode`
+  - `feature/contact-form`
+  - `feature/animations`
+- Implemented features with meaningful commits
 
-Release & Version Management
-git merge develop
-git tag -a v1.0.0 -m "Initial portfolio UI"
-git tag -a v1.0.1 -m "Project structure fix"
-git tag -a v2.0.0 -m "Major UI redesign"
+### Testing & Bug Fixes
+- Created UI testing branch `test/ui-testing`
+- Created bugfix branches:
+  - `bugfix/header-style`
+  - `bugfix/footer-text`
+- Applied bug fixes with independent commits
 
-GitHub (Remote Repository)
-git remote add origin <repository-url>
-git push -u origin main
-git push -u origin develop
-git push origin --all
-git push origin --tags
+### Merge, Rebase & Advanced Workflow
+- Merged bugfix branches with manual conflict resolution
+- Rebasing feature branches onto `develop`
+- Performed advanced octopus merge
+- Visualized commit history using:
 
-Commit History Visualization
-git log --oneline --graph --decorate --all
+
+### Version v1.0.0 Release
+- Refactored project structure
+- Created `main` branch
+- Merged `develop` into `main`
+- Created release tag `v1.0.0`
+- Created patch release tag `v1.0.1`
+
+### Remote Repository Management
+- Added remote origin
+- Pushed all branches to GitHub
+- Pushed all tags to GitHub
+
+### Major Update – v2.0.0
+- Created release branch `release/v2.0`
+- Performed full UI replacement
+- Single commit for complete UI rewrite
+- Merged release branch into `develop` and `main`
+- Created final release tag `v2.0.0`
+- Pushed final release to GitHub
+
+### Cleanup & Verification
+- Deleted unused branches
+- Verified final version and release tags
+
+---
+
+## Branches Used
+`main`, `develop`, `feature/*`, `bugfix/*`, `test/ui-testing`, `release/v2.0`  
+Each branch contains at least one meaningful commit.
+
+---
+
+## Merge Conflict Demonstration
+Merge conflicts were intentionally created during branch merges, resolved manually by editing conflicted files, removing conflict markers, and committing the final merged version successfully.
+
+---
+
+## Git Commit Graph
+The commit graph clearly demonstrates:
+- Parallel feature development
+- Bugfix integration
+- Rebasing workflow
+- Octopus merge
+- Version tagging
+- Major version upgrade
+
+---
+
+## Screenshots
+Screenshots included in the repository demonstrate:
+- Repository initialization
+- Branch creation
+- Feature and bugfix commits
+- Merge conflict resolution
+- Commit graph visualization
+- Pushing branches and tags to GitHub
+
+---
+
+## Challenges Faced
+- Managing multiple branches simultaneously
+- Resolving merge conflicts correctly
+- Understanding rebase vs merge
+- Maintaining a clean and readable commit history
+
+---
+
+## Learning Outcomes
+- Practical implementation of advanced Git workflows
+- Branching, merging, and release strategies
+- Merge conflict handling
+- Professional GitHub documentation
+- Industry-standard version control practices
+
+---
+
+## Conclusion
+This project successfully demonstrates a complete end-to-end Git execution flow from v1.0.0 to v2.0.0, reflecting structured development practices, clean version history, and professional Git usage.
+
+---
+
+## Author
+**Sushant Kumar**  
+Department of Computer Science & Engineering  
+Lovely Professional University
